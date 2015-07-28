@@ -45,6 +45,10 @@
 
 		<script>
 
+Reveal.addEventListener( 'slidechanged', function( event ) {
+	window.scrollTo(0,0);
+} );
+
         /**
          * 启动slides
          */
@@ -70,7 +74,7 @@
                                 item.classList.add('language-' + item.classList[0]);
                             });
                             Prism.highlightAll();
-                            initRunButton();
+                            //initRunButton();
                     } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }

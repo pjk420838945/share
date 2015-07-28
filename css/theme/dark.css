@@ -39,7 +39,7 @@ body {
 .reveal h6 {
     margin: 0 0 0.5em 0;
     color: #eeeeee;
-    line-height: 0.9em;
+    line-height: 1.3;
     letter-spacing: -0.03em;
     text-transform: none;
     text-shadow: none; 
@@ -55,6 +55,7 @@ body {
 .reveal p,
 .reveal ul li {
     margin-bottom: 0.5em;
+    line-height: 1.5;
 }
 
 /*********************************************
@@ -247,6 +248,12 @@ body {
 /*********************************************
  * code
  *********************************************/
+.reveal code {
+	background-color: #718F30;
+	padding: 0 0.2em;
+	border-radius: 0.2em;
+	margin: 0 0.2em;
+}
 .reveal pre {
     font-size: 1em;
     line-height: 1.25;
@@ -255,6 +262,9 @@ body {
 }
 .reveal pre code {
     padding: 0;
+    margin: 0;
+    border-radius: 0;
+    background-color: transparent;
 }
 .reveal .run-btn {
     position: absolute;
